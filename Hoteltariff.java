@@ -9,18 +9,19 @@ public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
         
 		int month;
-		int n = 2;
+		int n = 0;
         float rent;
-        float t = 0, r = 0; 
+        float t = 0, r = 0, t1=0, r1=0; 
         
-        month = scanner.nextInt();
+        
         System.out.println ("Enter the month: ");
+        month = scanner.nextInt();
         
-        rent = scanner.nextFloat();
         System.out.println ("Enter the room rent: ");
+        rent = scanner.nextFloat();
         
-        n = scanner.nextInt();
         System.out.println ("Enter the number of days: ");
+        n = scanner.nextInt();
         
         t = rent * n;
         r = ((rent + (rent * 0.2f)) * n);
